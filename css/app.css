@@ -1,0 +1,70 @@
+body {
+    background-color: #404040;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: #4472C4;
+}
+
+.logo {
+    height: 48px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons i {
+    font-size: 48px;
+    color: white;
+    padding: 15px 12px;
+    margin: 0;
+}
+
+.buttons a :hover {
+    background-color: RGBA(32, 56, 100, 0.5);
+}
+
+.buttons a.selected {
+    background-color: #203864;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #203864;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.searchbar a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.searchbar input {
+    background-color: #203864;
+    color: white;
+    border: 0;
+    margin: 0 7px;
+    font-size: 1.5em;
+    width: 30em;
+}
+
+.searchbar input:focus {
+    border: 0;
+}
