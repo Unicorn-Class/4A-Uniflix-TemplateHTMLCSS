@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     background-color: #404040;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -67,4 +70,56 @@ nav {
 
 .searchbar input:focus {
     border: 0;
+}
+
+.secondNav {
+    margin:0;
+    width: 100%;
+    height: 3.5em;
+    background-color: #203864;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.secondNav ul{
+    list-style-type: none;
+}
+
+.secondNav li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.secondNav li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.secondNav li a:hover {
+    color: white;
+}
+
+.secondNav li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.secondNav li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
