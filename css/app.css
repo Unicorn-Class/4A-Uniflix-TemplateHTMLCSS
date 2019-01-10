@@ -207,7 +207,7 @@ iframe {
 }
 
 .media {
-    margin-top: 40vh;
+    margin-top: 65vh;
     display: grid;
     width: 90%;
     grid-template-columns: 2.5% 13% 85.5%;
