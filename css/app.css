@@ -14,7 +14,7 @@ nav {
     position: fixed;
     left:0; right:0; top:0;
     height: 80px;
-    z-index: 9999;
+    z-index: 89;
 }
 
 .bg-blue {
@@ -76,6 +76,11 @@ nav {
     border: 0;
 }
 
+::placeholder { 
+    color: white;
+    opacity: 0.5; 
+  }
+
 .buttons.user:hover > .user-menu {
     display: inline;
 }
@@ -89,6 +94,7 @@ nav {
     right: 0;
     top: 80px;
     border-bottom-left-radius: 20px;
+    z-index: 25000;
 }
 
 .user-menu a {
@@ -128,7 +134,7 @@ nav {
 .anotherNav {
     position: fixed;
     top:60px;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .secondNav {
@@ -269,6 +275,13 @@ iframe {
     margin: 0 2.5%;
 }
 
+.col {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+
 h1{
     color: white;
 }
@@ -286,6 +299,14 @@ h1{
     width: 100%;
     grid-auto-columns: 33%;
     grid-template-areas: "a a a";
+    grid-auto-rows: auto;
+}
+
+.col .pictureGrid {
+    display: grid; 
+    width: 100%;
+    grid-auto-columns:16.5%;
+    grid-template-areas: "a a a a a a";
     grid-auto-rows: auto;
 }
 
