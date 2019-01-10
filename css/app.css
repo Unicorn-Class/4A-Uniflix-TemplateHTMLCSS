@@ -79,10 +79,6 @@ nav {
     display: inline;
 }
 
-.buttons.user::selection > .user-menu {
-    display: inline;
-}
-
 .user-menu {
     display: none;
     position: fixed;
