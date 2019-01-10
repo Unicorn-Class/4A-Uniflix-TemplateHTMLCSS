@@ -14,6 +14,7 @@ nav {
     position: fixed;
     left:0; right:0; top:0;
     height: 80px;
+    z-index: 9999;
 }
 
 .bg-blue {
@@ -117,12 +118,20 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 85px;
+}
+
+.main-discover {
+    margin-top: 135px;
+}
+
+.anotherNav {
+    position: fixed;
+    top:60px;
+    z-index: 9999;
 }
 
 .secondNav {
-    position: fixed;
-    margin:0;
     width: 100%;
     height: 3.5em;
     background-color: #203864;
@@ -132,7 +141,6 @@ nav {
     justify-items: center;
     position: fixed;
     left:0;
-    z-index: 9999;
 }
 
 .secondNav ul{
@@ -248,17 +256,24 @@ iframe {
     text-align: justify;
 }
 
-.col {
+.col3 {
     display: flex;
     width: 30%;
     flex-direction: column;
 }
 
-.col h1{
+.col2 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+
+h1{
     color: white;
 }
 
-.col .pictureGrid {
+.col3 .pictureGrid {
     display: grid; 
     width: 100%;
     grid-auto-columns: 50%;
@@ -266,27 +281,25 @@ iframe {
     grid-auto-rows: auto;
 }
 
-.col .pictureGrid .movieCard {
+.col2 .pictureGrid {
+    display: grid; 
+    width: 100%;
+    grid-auto-columns: 33%;
+    grid-template-areas: "a a a";
+    grid-auto-rows: auto;
+}
+
+.pictureGrid .movieCard {
     position: relative;
     display: block;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.col .pictureGrid img {
+.pictureGrid img {
     width: 100%;
 }
-
-/*.col .pictureGrid .caption{
-    position: absolute;
-    bottom: 5%;
-    right: 10%;
-    font-size: 1em;
-    z-index: 99;
-    color:white;
-}*/
-
-.col .pictureGrid .caption{
+.pictureGrid .caption{
     display: flex;
     position: absolute;
     left:0;
@@ -302,7 +315,7 @@ iframe {
     color: RGBA(0, 0, 0, 0);
 }
 
-.col .pictureGrid .caption:hover{
+.pictureGrid .caption:hover{
     background-color: RGBA(0, 0, 0, 0.5);
     color: white;
     transition: 0.3s;
