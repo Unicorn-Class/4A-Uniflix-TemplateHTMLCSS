@@ -81,23 +81,32 @@ nav {
     justify-content: space-around;
 }
 
-.main.container {
+.main .container {
     display: flex;
     flex-direction: column;
-    width: 30em;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
 }
 
-.main.container h1 {
+.main .container h1 {
     color: white;
     font-weight: 100;
+    margin-bottom: 0;
+    align-self: baseline;
 }
 
-.main.container .card-grid {
-    display: table;
+.main .container .card-grid {
+    display: grid;
+    grid-template-columns: 195px 195px;
+    grid-template-rows: 87.5% 16.9em;
 }
 
-.main.container.card-grid .card {
-    display: table-cell;
+.main .container .card-grid .card {
+    justify-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
 }
 
 .secondNav {
