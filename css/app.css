@@ -457,3 +457,47 @@ h1{
     background-color: #4472C4;
     border-radius: 100px;
 }
+
+.suggested {
+    display: grid; 
+    width: 100%;
+    grid-auto-columns:16.5%;
+    grid-template-areas: "a a a a a a";
+    grid-auto-rows: auto;
+}
+
+.suggested .movieCard {
+    position: relative;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.suggested img {
+    width: 100%;
+}
+.suggested .caption{
+    display: flex;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: RGBA(0, 0, 0, 0);
+    color: RGBA(0, 0, 0, 0);
+}
+
+.suggested .caption:hover{
+    background-color: RGBA(0, 0, 0, 0.5);
+    color: white;
+    transition: 0.3s;
+}
+
+.content h2 {
+    margin-left: 2%;
+}
