@@ -570,6 +570,6 @@ h1{
     transition: 0.3s;
 }
 
-.content h2 {
+.main-media .content h2 {
     margin-left: 2%;
 }
